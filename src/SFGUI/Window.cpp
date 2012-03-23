@@ -111,10 +111,6 @@ sf::Vector2f Window::CalculateRequisition() {
 	if( GetChild() ) {
 		requisition += GetChild()->GetRequisition();
 	}
-	else {
-		requisition.x = std::max( 50.f, requisition.x );
-		requisition.y = std::max( 50.f, requisition.y * 2.f );
-	}
 
 	return requisition;
 }
